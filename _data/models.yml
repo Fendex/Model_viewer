@@ -1,1 +1,59 @@
+- id: "model-01"
+  title_ru: "Демонстрационная модель 01"
+  title_en: "Demo Model 01"
 
+  source_file: "model-01-source.glb"
+  optimized_file: "model-01-optimized.glb"
+
+  source_size: "Указать размер"
+  optimized_size: "Указать размер"
+  reduction: "Указать процент"
+
+  polygons_source: "—"
+  polygons_optimized: "—"
+
+  materials_source: "—"
+  materials_optimized: "—"
+
+  textures_source: "—"
+  textures_optimized: "—"
+
+- id: "model-02"
+  title_ru: "Демонстрационная модель 02"
+  title_en: "Demo Model 02"
+
+  source_file: "model-02-source.glb"
+  optimized_file: "model-02-optimized.glb"
+
+  source_size: "Указать размер"
+  optimized_size: "Указать размер"
+  reduction: "Указать процент"
+
+  polygons_source: "—"
+  polygons_optimized: "—"
+
+  materials_source: "—"
+  materials_optimized: "—"
+
+  textures_source: "—"
+  textures_optimized: "—"
+
+- id: "model-03"
+  title_ru: "Демонстрационная модель 03"
+  title_en: "Demo Model 03"
+
+  source_file: "model-03-source.glb"
+  optimized_file: "model-03-optimized.glb"
+
+  source_size: "Указать размер"
+  optimized_size: "Указать размер"
+  reduction: "Указать процент"
+
+  polygons_source: "—"
+  polygons_optimized: "—"
+
+  materials_source: "—"
+  materials_optimized: "—"
+
+  textures_source: "—"
+  textures_optimized: "—"
