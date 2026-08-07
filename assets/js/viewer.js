@@ -83,3 +83,12 @@ document.addEventListener("DOMContentLoaded", () => {
   setLanguage(currentLanguage);
   setTheme(darkMode);
 });
+document.querySelectorAll("model-viewer").forEach((viewer) => {
+  viewer.addEventListener("load", () => {
+    console.log("Модель загружена:", viewer.src);
+  });
+
+  viewer.addEventListener("error", (event) => {
+    console.error("Ошибка загрузки модели:", viewer.src, event);
+  });
+});
