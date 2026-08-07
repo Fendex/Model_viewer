@@ -58,7 +58,7 @@ title: Fendex — GLB Optimization
   </section>
 
   <section class="content-section">
-    <h2 data-ru="Что я делаю" data-en="What I do">Что я делаю</h2>
+    <h2 data-ru="Что я делаю:" data-en="What I do:">Что я делаю:</h2>
 
     <div class="info-grid">
       <div class="info-card">
@@ -68,6 +68,20 @@ title: Fendex — GLB Optimization
           Готовые файлы OBJ и GLB.
         </p>
       </div>
+
+    <script
+      type="module"
+      src="{{ '/assets/js/model-viewer.min.js' | relative_url }}">
+    </script>
+      
+      <script>
+    customElements.whenDefined("model-viewer").then(() => {
+    const ModelViewer = customElements.get("model-viewer");
+
+    ModelViewer.meshoptDecoderLocation =
+      "https://unpkg.com/meshoptimizer/meshopt_decoder.js";
+    });
+    </script>
 
       <div class="info-card">
         <span class="info-icon">02</span>
