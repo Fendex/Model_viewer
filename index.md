@@ -141,8 +141,9 @@ title: Fendex — GLB Optimization
 
             <model-viewer
               class="model-viewer"
-              src="{{ '/assets/models/' | append: model.source_file | relative_url }}"
+              src="{{ site.data.site.storage_base_url }}/{{ model.source_file }}"
               alt="{{ model.title_en }} source model"
+              crossorigin="anonymous"
               camera-controls
               auto-rotate
               shadow-intensity="1"
@@ -191,8 +192,9 @@ title: Fendex — GLB Optimization
 
             <model-viewer
               class="model-viewer"
-              src="{{ '/assets/models/' | append: model.optimized_file | relative_url }}"
+              src="{{ site.data.site.storage_base_url }}/{{ model.optimized_file }}"
               alt="{{ model.title_en }} optimized model"
+              crossorigin="anonymous"
               camera-controls
               auto-rotate
               shadow-intensity="1"
@@ -212,9 +214,9 @@ title: Fendex — GLB Optimization
                 </span>
               </button>
 
-              <a
+             <a
                 class="viewer-button download-button"
-                href="{{ '/assets/models/' | append: model.optimized_file | relative_url }}"
+                href="{{ site.data.site.storage_base_url }}/{{ model.optimized_file }}"
                 download>
                 <span data-ru="Скачать GLB" data-en="Download GLB">
                   Скачать GLB
