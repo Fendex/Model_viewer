@@ -1,4 +1,4 @@
----
+<img width="533" height="426" alt="image" src="https://github.com/user-attachments/assets/0aafddc4-f050-4539-b863-06052b022d13" />---
 layout: default
 title: Fendex — GLB Optimization
 ---
@@ -66,15 +66,16 @@ title: Fendex — GLB Optimization
     </p>
 
     <div class="hero-actions">
-      <a
-        class="pill-button primary"
-        href="mailto:{{ site.data.site.email }}">
+     <button
+        class="pill-button primary copy-email-button"
+        type="button"
+        data-copy-text="{{ site.data.site.email }}">
         <span
-          data-ru="Написать на Email"
-          data-en="Send Email">
-          Написать на Email
+          data-ru="Скопировать Email"
+          data-en="Copy Email">
+          Скопировать Email
         </span>
-      </a>
+     </button>
 
       <a
         class="pill-button"
@@ -527,16 +528,27 @@ title: Fendex — GLB Optimization
         Telegram
       </a>
 
-      <a
-        class="pill-button"
-        href="mailto:{{ site.data.site.email }}">
-        rendexfendex@gmail.com
-      </a>
+      <button
+        class="pill-button copy-email-button"
+        type="button"
+        data-copy-text="{{ site.data.site.email }}">
+        Email
+      </button>
 
     </div>
   </section>
 
 </main>
+
+<div
+  id="toast"
+  class="toast"
+  role="status"
+  aria-live="polite"
+  data-ru="Email скопирован в буфер обмена"
+  data-en="Email copied to clipboard">
+  Email скопирован в буфер обмена
+</div>
 
 <footer class="site-footer">
   <p>
