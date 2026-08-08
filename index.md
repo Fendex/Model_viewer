@@ -1,7 +1,3 @@
---
-layout: default
-title: Fendex — GLB Optimization
----
 
 <script
   type="module"
