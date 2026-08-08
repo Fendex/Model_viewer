@@ -530,7 +530,7 @@ title: Fendex — GLB Optimization
       <a
         class="pill-button"
         href="mailto:{{ site.data.site.email }}">
-        Email
+        rendexfendex@gmail.com
       </a>
 
     </div>
