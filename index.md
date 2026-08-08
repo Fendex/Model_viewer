@@ -59,8 +59,8 @@ title: Fendex — GLB Optimization
 
     <p
       class="hero-subtitle"
-      data-ru="Получение облегчённых GLB из готовых OBJ и GLB-моделей для WebGL и WebAR."
-      data-en="Lightweight GLB files from ready-made OBJ and GLB models for WebGL and WebAR.">
+      data-ru="Получение облегчённых GLB из готовых OBJ, FBX, STL, STEP и GLB-моделей для WebGL и WebAR."
+      data-en="Lightweight GLB files from ready-made OBJ, FBX, STL, STEP and GLB models for WebGL and WebAR.">
       Получение облегчённых GLB из готовых OBJ и GLB-моделей для WebGL и WebAR.
     </p>
 
@@ -87,9 +87,9 @@ title: Fendex — GLB Optimization
 
     <p
       class="demo-note"
-      data-ru="Эта страница предназначена только для демонстрации результата. Загрузка и обработка файлов на сайте не выполняются."
+      data-ru="Эта страница предназначена только для демонстрации моего портфолио. Загрузка и обработка файлов на сайте не выполняются."
       data-en="This page is for demonstration purposes only. Files are not uploaded or processed on this website.">
-      Эта страница предназначена только для демонстрации результата. Загрузка и обработка файлов на сайте не выполняются.
+      Эта страница предназначена только для демонстрации моего портфолио. Загрузка и обработка файлов на сайте не выполняются.
     </p>
   </section>
 
@@ -112,9 +112,9 @@ title: Fendex — GLB Optimization
         </h3>
 
         <p
-          data-ru="Готовые файлы OBJ и GLB."
-          data-en="Ready-made OBJ and GLB files.">
-          Готовые файлы OBJ и GLB.
+          data-ru="Готовые файлы OBJ, FBX, STL, STEP и GLB."
+          data-en="Ready-made OBJ, FBX, STL, STEP and GLB files.">
+          Готовые файлы OBJ, FBX, STL, STEP и GLB.
         </p>
       </div>
 
@@ -144,9 +144,9 @@ title: Fendex — GLB Optimization
         </h3>
 
         <p
-          data-ru="Файл проходит через автоматизированный pipeline."
-          data-en="The file is processed through an automated pipeline.">
-          Файл проходит через автоматизированный pipeline.
+          data-ru="Файл проходит через созданный мною pipeline."
+          data-en="The file is processed through an myself-made pipeline.">
+          Файл проходит через созданный мною pipeline.
         </p>
       </div>
 
@@ -160,9 +160,9 @@ title: Fendex — GLB Optimization
         </h3>
 
         <p
-          data-ru="Возможна обработка партий от 10 до 50 файлов."
-          data-en="Batch processing is available for 10 to 50 files.">
-          Возможна обработка партий от 10 до 50 файлов.
+          data-ru="Возможна обработка партий от 1  файла."
+          data-en="Batch processing is available for 1+ files.">
+          Возможна обработка партий от 1 файла.
         </p>
       </div>
 
@@ -512,9 +512,9 @@ title: Fendex — GLB Optimization
     </h2>
 
     <p
-      data-ru="Если вам нужно обработать партию готовых OBJ или GLB-моделей, напишите мне."
-      data-en="If you need to process a batch of ready-made OBJ or GLB models, contact me.">
-      Если вам нужно обработать партию готовых OBJ или GLB-моделей, напишите мне.
+      data-ru="Если вам нужно обработать партию готовых моделей, напишите мне."
+      data-en="If you need to process a batch of ready-made models, contact me.">
+      Если вам нужно обработать партию готовых моделей, напишите мне.
     </p>
 
     <div class="contact-actions">
@@ -531,23 +531,13 @@ title: Fendex — GLB Optimization
         class="pill-button copy-email-button"
         type="button"
         data-copy-text="{{ site.data.site.email }}">
-        Email
+        Скопировать мой Email
       </button>
 
     </div>
   </section>
 
 </main>
-
-<div
-  id="toast"
-  class="toast"
-  role="status"
-  aria-live="polite"
-  data-ru="Email скопирован в буфер обмена"
-  data-en="Email copied to clipboard">
-  Email скопирован в буфер обмена
-</div>
 
 <footer class="site-footer">
   <p>
