@@ -232,6 +232,8 @@ title: Fendex — GLB Optimization
               src="{{ source_url }}"
               alt="{{ model.title_en }} source model"
               crossorigin="anonymous"
+              loading="eager"
+              reveal="auto"
               camera-controls
               auto-rotate
               shadow-intensity="1"
@@ -322,6 +324,8 @@ title: Fendex — GLB Optimization
               src="{{ optimized_url }}"
               alt="{{ model.title_en }} optimized model"
               crossorigin="anonymous"
+              loading="eager"
+              reveal="auto"
               camera-controls
               auto-rotate
               shadow-intensity="1"
