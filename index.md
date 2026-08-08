@@ -1,3 +1,4 @@
+--
 layout: default
 title: Fendex — GLB Optimization
 ---
@@ -427,21 +428,15 @@ title: Fendex — GLB Optimization
       <ul>
 
         <li
-          data-ru="Принимаются только готовые OBJ и GLB-файлы."
-          data-en="Only ready-made OBJ and GLB files are accepted.">
-          Принимаются только готовые OBJ и GLB-файлы.
+          data-ru="Принимаются только готовые OBJ, FBX, STL, STEP и GLB-файлы."
+          data-en="Only ready-made OBJ, FBX, STL, STEP and GLB files are accepted.">
+          Принимаются только готовые OBJ, FBX, STL, STEP и GLB-файлы.
         </li>
 
         <li
           data-ru="Выходной формат — GLB."
           data-en="The output format is GLB.">
           Выходной формат — GLB.
-        </li>
-
-        <li
-          data-ru="Ручное моделирование и редактирование моделей не выполняются."
-          data-en="Manual modeling and manual model editing are not provided.">
-          Ручное моделирование и редактирование моделей не выполняются.
         </li>
 
         <li
