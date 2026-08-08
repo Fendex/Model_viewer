@@ -1,4 +1,3 @@
-<img width="533" height="426" alt="image" src="https://github.com/user-attachments/assets/0aafddc4-f050-4539-b863-06052b022d13" />---
 layout: default
 title: Fendex — GLB Optimization
 ---
