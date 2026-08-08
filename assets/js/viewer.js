@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const setLanguage = (language) => {
     currentLanguage = language;
     localStorage.setItem("language", language);
-
     document.documentElement.lang = language;
 
     document.querySelectorAll("[data-ru][data-en]").forEach((element) => {
@@ -41,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", dark ? "dark" : "light");
 
     const themeButton = document.getElementById("theme-toggle");
+
     if (themeButton) {
       themeButton.textContent = dark ? "☀" : "☾";
     }
@@ -52,9 +52,13 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  document.getElementById("theme-toggle")?.addEventListener("click", () => {
-    setTheme(!darkMode);
-  });
+  const themeToggle = document.getElementById("theme-toggle");
+
+  if (themeToggle) {
+    themeToggle.addEventListener("click", () => {
+      setTheme(!darkMode);
+    });
+  }
 
   document.querySelectorAll(".reset-camera").forEach((button) => {
     button.addEventListener("click", () => {
@@ -64,7 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       viewer.cameraOrbit = "0deg 75deg 105%";
       viewer.fieldOfView = "30deg";
-      viewer.jumpCameraToGoal();
+
+      if (viewer.jumpCameraToGoal) {
+        viewer.jumpCameraToGoal();
+      }
     });
   });
 
@@ -80,15 +87,59 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  setLanguage(currentLanguage);
-  setTheme(darkMode);
-});
-document.querySelectorAll("model-viewer").forEach((viewer) => {
-  viewer.addEventListener("load", () => {
-    console.log("Модель загружена:", viewer.src);
+  document.querySelectorAll("model-viewer").forEach((viewer) => {
+    viewer.addEventListener("load", () => {
+      console.log("Модель загружена:", viewer.src);
+    });
+
+    viewer.addEventListener("error", (event) => {
+      console.error("Ошибка загрузки модели:", viewer.src, event);
+    });
   });
 
-  viewer.addEventListener("error", (event) => {
-    console.error("Ошибка загрузки модели:", viewer.src, event);
+  const toast = document.getElementById("toast");
+
+  function showToast(message) {
+    if (!toast) return;
+
+    toast.textContent = message;
+    toast.classList.add("show");
+
+    window.clearTimeout(window.toastTimer);
+
+    window.toastTimer = window.setTimeout(() => {
+      toast.classList.remove("show");
+    }, 2500);
+  }
+
+  document.querySelectorAll(".copy-email-button").forEach((button) => {
+    button.addEventListener("click", async () => {
+      const text = button.dataset.copyText;
+
+      try {
+        await navigator.clipboard.writeText(text);
+
+        const language = localStorage.getItem("language") || "ru";
+
+        showToast(
+          language === "ru"
+            ? "Email скопирован в буфер обмена"
+            : "Email copied to clipboard"
+        );
+      } catch (error) {
+        console.error("Не удалось скопировать Email:", error);
+
+        const language = localStorage.getItem("language") || "ru";
+
+        showToast(
+          language === "ru"
+            ? "Не удалось скопировать Email"
+            : "Could not copy Email"
+        );
+      }
+    });
   });
+
+  setLanguage(currentLanguage);
+  setTheme(darkMode);
 });
