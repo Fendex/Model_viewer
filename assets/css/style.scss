@@ -407,4 +407,43 @@ body {
     align-items: flex-start;
     flex-direction: column;
   }
+  
+  .toast {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  z-index: 1000;
+  max-width: calc(100% - 32px);
+  padding: 12px 18px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, 20px);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.copy-email-button {
+  font-family: inherit;
+}
+
+@media (max-width: 560px) {
+  .toast {
+    bottom: 18px;
+    font-size: 0.82rem;
+  }
+}
 }
