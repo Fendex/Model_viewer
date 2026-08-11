@@ -5,9 +5,8 @@
   source_file: "model-01-source.glb"
   optimized_file: "model-01-optimized.glb"
 
-  source_size: "Указать размер"
-  optimized_size: "Указать размер"
-  reduction: "Указать процент"
+  source_size_mb: 136
+  optimized_size_mb: 18
 
   polygons_source: "—"
   polygons_optimized: "—"
@@ -17,6 +16,7 @@
 
   textures_source: "—"
   textures_optimized: "—"
+
 
 - id: "model-02"
   title_ru: "Демонстрационная модель 02"
@@ -25,9 +25,8 @@
   source_file: "model-02-source.glb"
   optimized_file: "model-02-optimized.glb"
 
-  source_size: "Указать размер"
-  optimized_size: "Указать размер"
-  reduction: "Указать процент"
+  source_size_mb: 80
+  optimized_size_mb: 12
 
   polygons_source: "—"
   polygons_optimized: "—"
@@ -38,6 +37,7 @@
   textures_source: "—"
   textures_optimized: "—"
 
+
 - id: "model-03"
   title_ru: "Демонстрационная модель 03"
   title_en: "Demo Model 03"
@@ -45,9 +45,48 @@
   source_file: "model-03-source.glb"
   optimized_file: "model-03-optimized.glb"
 
-  source_size: "Указать размер"
-  optimized_size: "Указать размер"
-  reduction: "Указать процент"
+  source_size_mb: 95
+  optimized_size_mb: 15
+
+  polygons_source: "—"
+  polygons_optimized: "—"
+
+  materials_source: "—"
+  materials_optimized: "—"
+
+  textures_source: "—"
+  textures_optimized: "—"
+
+
+- id: "model-04"
+  title_ru: "Демонстрационная модель 04"
+  title_en: "Demo Model 04"
+
+  source_file: "model-04-source.glb"
+  optimized_file: "model-04-optimized.glb"
+
+  source_size_mb: 72
+  optimized_size_mb: 11
+
+  polygons_source: "—"
+  polygons_optimized: "—"
+
+  materials_source: "—"
+  materials_optimized: "—"
+
+  textures_source: "—"
+  textures_optimized: "—"
+
+
+- id: "model-05"
+  title_ru: "Демонстрационная модель 05"
+  title_en: "Demo Model 05"
+
+  source_file: "model-05-source.glb"
+  optimized_file: "model-05-optimized.glb"
+
+  source_size_mb: 110
+  optimized_size_mb: 16
 
   polygons_source: "—"
   polygons_optimized: "—"
