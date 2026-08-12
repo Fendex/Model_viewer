@@ -68,9 +68,9 @@ title: Fendex — GLB Optimization
 
     <p
       class="hero-subtitle"
-      data-ru="Получение облегчённых GLB из готовых OBJ, GLB, STEP, FBX, BLEND и STL-моделей для WebGL и WebAR."
-      data-en="Lightweight GLB files from ready-made OBJ, GLB, STEP, FBX, BLEND and STL models for WebGL and WebAR.">
-      Получение облегчённых GLB из готовых OBJ, GLB, STEP, FBX, BLEND и STL-моделей для WebGL и WebAR.
+      data-ru="Получение облегчённых GLB из готовых OBJ, GLB, FBX, BLEND и STL-моделей для WebGL и WebAR."
+      data-en="Lightweight GLB files from ready-made OBJ, GLB, FBX, BLEND and STL models for WebGL and WebAR.">
+      Получение облегчённых GLB из готовых OBJ, GLB, FBX, BLEND и STL-моделей для WebGL и WebAR.
     </p>
 
     <div class="hero-actions">
@@ -125,9 +125,9 @@ title: Fendex — GLB Optimization
         </h3>
 
         <p
-          data-ru="Готовые файлы OBJ, GLB, STEP, FBX, BLEND и STL."
-          data-en="Ready-made OBJ, GLB, STEP, FBX and STL files.">
-          Готовые файлы OBJ, GLB, STEP, FBX и STL.
+          data-ru="Готовые файлы OBJ, GLB, FBX, BLEND и STL."
+          data-en="Ready-made OBJ, GLB, FBX and STL files.">
+          Готовые файлы OBJ, GLB, FBX и STL.
         </p>
       </div>
 
@@ -461,9 +461,9 @@ title: Fendex — GLB Optimization
       <ul>
 
         <li
-          data-ru="Принимаются готовые OBJ, GLB, STEP, FBX, BLEND и STL-файлы."
-          data-en="Ready-made OBJ, GLB, STEP, FBX, BLEND and STL files are accepted.">
-          Принимаются готовые OBJ, GLB, STEP, FBX, BLEND и STL-файлы.
+          data-ru="Принимаются готовые OBJ, GLB, FBX, BLEND и STL-файлы."
+          data-en="Ready-made OBJ, GLB, FBX, BLEND and STL files are accepted.">
+          Принимаются готовые OBJ, GLB, FBX, BLEND и STL-файлы.
         </li>
 
         <li
