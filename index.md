@@ -538,8 +538,8 @@ title: Fendex — GLB Optimization
       <div class="price-card">
 
         <h3
-          data-ru="Большие партии"
-          data-en="Larger batches">
+          data-ru="Большие партии (50 моделей)"
+          data-en="Larger batches (50 models)">
           Большие партии
         </h3>
 
@@ -591,16 +591,6 @@ title: Fendex — GLB Optimization
   </section>
 
 </main>
-
-<div
-  id="toast"
-  class="toast"
-  role="status"
-  aria-live="polite"
-  data-ru="Email скопирован в буфер обмена"
-  data-en="Email copied to clipboard">
-  Email скопирован в буфер обмена
-</div>
 
 <footer class="site-footer">
   <p>
