@@ -24,17 +24,24 @@ title: Fendex — GLB Optimization
     </a>
 
     <div class="header-actions">
-      <button class="language-button active" data-language="ru">
+      <button
+        class="language-button active"
+        data-language="ru"
+        type="button">
         RU
       </button>
 
-      <button class="language-button" data-language="en">
+      <button
+        class="language-button"
+        data-language="en"
+        type="button">
         EN
       </button>
 
       <button
         class="theme-button"
         id="theme-toggle"
+        type="button"
         aria-label="Toggle theme">
         ☾
       </button>
@@ -45,6 +52,7 @@ title: Fendex — GLB Optimization
 <main class="page-content">
 
   <section class="hero-section">
+
     <div
       class="hero-badge"
       data-ru="Демонстрационное портфолио"
@@ -60,21 +68,23 @@ title: Fendex — GLB Optimization
 
     <p
       class="hero-subtitle"
-      data-ru="Получение облегчённых GLB из готовых OBJ и GLB-моделей для WebGL и WebAR."
-      data-en="Lightweight GLB files from ready-made OBJ and GLB models for WebGL and WebAR.">
-      Получение облегчённых GLB из готовых OBJ и GLB-моделей для WebGL и WebAR.
+      data-ru="Получение облегчённых GLB из готовых OBJ, GLB, STEP, FBX, BLEND и STL-моделей для WebGL и WebAR."
+      data-en="Lightweight GLB files from ready-made OBJ, GLB, STEP, FBX, BLEND and STL models for WebGL and WebAR.">
+      Получение облегчённых GLB из готовых OBJ, GLB, STEP, FBX, BLEND и STL-моделей для WebGL и WebAR.
     </p>
 
     <div class="hero-actions">
-      <a
-        class="pill-button primary"
-        href="mailto:{{ site.data.site.email }}">
+
+      <button
+        class="pill-button primary copy-email-button"
+        type="button"
+        data-copy-text="{{ site.data.site.email }}">
         <span
-          data-ru="Написать на Email"
-          data-en="Send Email">
-          Написать на Email
+          data-ru="Скопировать Email"
+          data-en="Copy Email">
+          Скопировать Email
         </span>
-      </a>
+      </button>
 
       <a
         class="pill-button"
@@ -83,17 +93,20 @@ title: Fendex — GLB Optimization
         rel="noopener">
         Telegram
       </a>
+
     </div>
 
     <p
       class="demo-note"
-      data-ru="Эта страница предназначена только для демонстрации результата. Загрузка и обработка файлов на сайте не выполняются."
-      data-en="This page is for demonstration purposes only. Files are not uploaded or processed on this website.">
-      Эта страница предназначена только для демонстрации результата. Загрузка и обработка файлов на сайте не выполняются.
+      data-ru="Это демонстрационная страница. Загрузка и обработка файлов здесь не выполняются."
+      data-en="This is a demonstration page. Files are not uploaded or processed here.">
+      Это демонстрационная страница. Загрузка и обработка файлов здесь не выполняются.
     </p>
+
   </section>
 
   <section class="content-section">
+
     <h2
       data-ru="Что я делаю"
       data-en="What I do">
@@ -112,9 +125,9 @@ title: Fendex — GLB Optimization
         </h3>
 
         <p
-          data-ru="Готовые файлы OBJ и GLB."
-          data-en="Ready-made OBJ and GLB files.">
-          Готовые файлы OBJ и GLB.
+          data-ru="Готовые файлы OBJ, GLB, STEP, FBX, BLEND и STL."
+          data-en="Ready-made OBJ, GLB, STEP, FBX and STL files.">
+          Готовые файлы OBJ, GLB, STEP, FBX и STL.
         </p>
       </div>
 
@@ -154,15 +167,15 @@ title: Fendex — GLB Optimization
         <span class="info-icon">04</span>
 
         <h3
-          data-ru="Пакетная обработка"
-          data-en="Batch processing">
-          Пакетная обработка
+          data-ru="От одного файла"
+          data-en="From one file">
+          От одного файла
         </h3>
 
         <p
-          data-ru="Возможна обработка партий от 10 до 50 файлов."
-          data-en="Batch processing is available for 10 to 50 files.">
-          Возможна обработка партий от 10 до 50 файлов.
+          data-ru="Можно начать с одного файла. Крупные партии согласовываются отдельно."
+          data-en="You can start with one file. Larger batches are agreed separately.">
+          Можно начать с одного файла. Крупные партии согласовываются отдельно.
         </p>
       </div>
 
@@ -170,7 +183,9 @@ title: Fendex — GLB Optimization
   </section>
 
   <section class="content-section">
+
     <div class="section-heading">
+
       <h2
         data-ru="Сравнение моделей"
         data-en="Model comparison">
@@ -182,6 +197,7 @@ title: Fendex — GLB Optimization
         data-en="Source and optimized static GLB models.">
         Исходные и оптимизированные статичные GLB-модели.
       </p>
+
     </div>
 
     <div class="models-list">
@@ -196,9 +212,18 @@ title: Fendex — GLB Optimization
         | append: "/"
         | append: model.optimized_file %}
 
+      {% assign saved_size = model.source_size_mb
+        | minus: model.optimized_size_mb %}
+
+      {% assign reduction = saved_size
+        | times: 100.0
+        | divided_by: model.source_size_mb
+        | round: 1 %}
+
       <article class="model-comparison">
 
         <div class="model-title">
+
           <h3
             class="model-name"
             data-title-ru="{{ model.title_ru }}"
@@ -207,8 +232,9 @@ title: Fendex — GLB Optimization
           </h3>
 
           <span class="reduction-badge">
-            {{ model.reduction }}
+            -{{ reduction }}%
           </span>
+
         </div>
 
         <div class="viewer-grid">
@@ -216,6 +242,7 @@ title: Fendex — GLB Optimization
           <div class="viewer-card">
 
             <div class="viewer-header">
+
               <span
                 data-ru="До обработки"
                 data-en="Before optimization">
@@ -223,8 +250,9 @@ title: Fendex — GLB Optimization
               </span>
 
               <strong>
-                {{ model.source_size }}
+                {{ model.source_size_mb }} MB
               </strong>
+
             </div>
 
             <model-viewer
@@ -234,6 +262,7 @@ title: Fendex — GLB Optimization
               crossorigin="anonymous"
               loading="eager"
               reveal="auto"
+              environment-image="neutral"
               camera-controls
               auto-rotate
               shadow-intensity="1"
@@ -308,6 +337,7 @@ title: Fendex — GLB Optimization
           <div class="viewer-card optimized-card">
 
             <div class="viewer-header">
+
               <span
                 data-ru="После обработки"
                 data-en="After optimization">
@@ -315,8 +345,9 @@ title: Fendex — GLB Optimization
               </span>
 
               <strong>
-                {{ model.optimized_size }}
+                {{ model.optimized_size_mb }} MB
               </strong>
+
             </div>
 
             <model-viewer
@@ -326,6 +357,7 @@ title: Fendex — GLB Optimization
               crossorigin="anonymous"
               loading="eager"
               reveal="auto"
+              environment-image="neutral"
               camera-controls
               auto-rotate
               shadow-intensity="1"
@@ -417,6 +449,7 @@ title: Fendex — GLB Optimization
   </section>
 
   <section class="content-section">
+
     <h2
       data-ru="Ограничения"
       data-en="Limitations">
@@ -424,12 +457,13 @@ title: Fendex — GLB Optimization
     </h2>
 
     <div class="limitations-box">
+
       <ul>
 
         <li
-          data-ru="Принимаются только готовые OBJ и GLB-файлы."
-          data-en="Only ready-made OBJ and GLB files are accepted.">
-          Принимаются только готовые OBJ и GLB-файлы.
+          data-ru="Принимаются готовые OBJ, GLB, STEP, FBX, BLEND и STL-файлы."
+          data-en="Ready-made OBJ, GLB, STEP, FBX, BLEND and STL files are accepted.">
+          Принимаются готовые OBJ, GLB, STEP, FBX, BLEND и STL-файлы.
         </li>
 
         <li
@@ -439,9 +473,15 @@ title: Fendex — GLB Optimization
         </li>
 
         <li
-          data-ru="Ручное моделирование и редактирование моделей не выполняются."
+          data-ru="Обработка возможна от одного файла. Крупные партии согласовываются отдельно."
+          data-en="Processing is available from one file. Larger batches are agreed separately.">
+          Обработка возможна от одного файла. Крупные партии согласовываются отдельно.
+        </li>
+
+        <li
+          data-ru="Ручное моделирование и ручное редактирование моделей не выполняются."
           data-en="Manual modeling and manual model editing are not provided.">
-          Ручное моделирование и редактирование моделей не выполняются.
+          Ручное моделирование и ручное редактирование моделей не выполняются.
         </li>
 
         <li
@@ -456,11 +496,19 @@ title: Fendex — GLB Optimization
           Фактический результат зависит от исходного файла.
         </li>
 
+        <li
+          data-ru="Для Meshopt-сжатых файлов целевой просмотрщик должен поддерживать Meshopt-декодирование."
+          data-en="For Meshopt-compressed files, the target viewer must support Meshopt decoding.">
+          Для Meshopt-сжатых файлов целевой просмотрщик должен поддерживать Meshopt-декодирование.
+        </li>
+
       </ul>
+
     </div>
   </section>
 
   <section class="content-section pricing-section">
+
     <h2
       data-ru="Ориентировочная стоимость"
       data-en="Estimated pricing">
@@ -470,10 +518,11 @@ title: Fendex — GLB Optimization
     <div class="pricing-grid">
 
       <div class="price-card">
+
         <h3
-          data-ru="Пакет 10 файлов"
-          data-en="10-file package">
-          Пакет 10 файлов
+          data-ru="От одного файла"
+          data-en="From one file">
+          От одного файла
         </h3>
 
         <strong class="price-value ru-price">
@@ -483,13 +532,15 @@ title: Fendex — GLB Optimization
         <strong class="price-value en-price">
           {{ site.data.site.price_10_en }}
         </strong>
+
       </div>
 
       <div class="price-card">
+
         <h3
-          data-ru="Пакет 50 файлов"
-          data-en="50-file package">
-          Пакет 50 файлов
+          data-ru="Большие партии"
+          data-en="Larger batches">
+          Большие партии
         </h3>
 
         <strong class="price-value ru-price">
@@ -499,12 +550,14 @@ title: Fendex — GLB Optimization
         <strong class="price-value en-price">
           {{ site.data.site.price_50_en }}
         </strong>
+
       </div>
 
     </div>
   </section>
 
   <section class="contact-section">
+
     <h2
       data-ru="Связаться со мной"
       data-en="Contact me">
@@ -512,31 +565,42 @@ title: Fendex — GLB Optimization
     </h2>
 
     <p
-      data-ru="Если вам нужно обработать партию готовых OBJ или GLB-моделей, напишите мне."
-      data-en="If you need to process a batch of ready-made OBJ or GLB models, contact me.">
-      Если вам нужно обработать партию готовых OBJ или GLB-моделей, напишите мне.
+      data-ru="Если вам нужно обработать один или несколько готовых 3D-файлов, напишите мне."
+      data-en="If you need to process one or more ready-made 3D files, contact me.">
+      Если вам нужно обработать один или несколько готовых 3D-файлов, напишите мне.
     </p>
 
     <div class="contact-actions">
 
+      <button
+        class="pill-button primary copy-email-button"
+        type="button"
+        data-copy-text="{{ site.data.site.email }}">
+        Email
+      </button>
+
       <a
-        class="pill-button primary"
+        class="pill-button"
         href="{{ site.data.site.telegram_url }}"
         target="_blank"
         rel="noopener">
         Telegram
       </a>
 
-      <a
-        class="pill-button"
-        href="mailto:{{ site.data.site.email }}">
-        Email
-      </a>
-
     </div>
   </section>
 
 </main>
+
+<div
+  id="toast"
+  class="toast"
+  role="status"
+  aria-live="polite"
+  data-ru="Email скопирован в буфер обмена"
+  data-en="Email copied to clipboard">
+  Email скопирован в буфер обмена
+</div>
 
 <footer class="site-footer">
   <p>

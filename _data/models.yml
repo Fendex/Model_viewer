@@ -5,17 +5,17 @@
   source_file: "model-01-source.glb"
   optimized_file: "model-01-optimized.glb"
 
-  source_size_mb: 136
-  optimized_size_mb: 18
+  source_size_mb: 70
+  optimized_size_mb: 1.9
 
-  polygons_source: "—"
-  polygons_optimized: "—"
+  polygons_source: "186700"
+  polygons_optimized: "186 698"
 
-  materials_source: "—"
-  materials_optimized: "—"
+  materials_source: "31"
+  materials_optimized: "31"
 
-  textures_source: "—"
-  textures_optimized: "—"
+  textures_source: "63"
+  textures_optimized: "61"
 
 
 - id: "model-02"
@@ -25,17 +25,17 @@
   source_file: "model-02-source.glb"
   optimized_file: "model-02-optimized.glb"
 
-  source_size_mb: 80
-  optimized_size_mb: 12
+  source_size_mb: 46.3
+  optimized_size_mb: 3
 
-  polygons_source: "—"
-  polygons_optimized: "—"
+  polygons_source: "1 713 468"
+  polygons_optimized: "857 002"
 
-  materials_source: "—"
-  materials_optimized: "—"
+  materials_source: "22"
+  materials_optimized: "3"
 
-  textures_source: "—"
-  textures_optimized: "—"
+  textures_source: "3"
+  textures_optimized: "3"
 
 
 - id: "model-03"
@@ -45,17 +45,17 @@
   source_file: "model-03-source.glb"
   optimized_file: "model-03-optimized.glb"
 
-  source_size_mb: 95
-  optimized_size_mb: 15
+  source_size_mb: 75.6
+  optimized_size_mb: 12.3
 
-  polygons_source: "—"
-  polygons_optimized: "—"
+  polygons_source: "2 333 984"
+  polygons_optimized: "742 174"
 
-  materials_source: "—"
-  materials_optimized: "—"
+  materials_source: "42"
+  materials_optimized: "42"
 
-  textures_source: "—"
-  textures_optimized: "—"
+  textures_source: "20"
+  textures_optimized: "20"
 
 
 - id: "model-04"
@@ -65,17 +65,17 @@
   source_file: "model-04-source.glb"
   optimized_file: "model-04-optimized.glb"
 
-  source_size_mb: 72
-  optimized_size_mb: 11
+  source_size_mb: 15.4
+  optimized_size_mb: 0.27
 
-  polygons_source: "—"
-  polygons_optimized: "—"
+  polygons_source: "122 542"
+  polygons_optimized: "61 337"
 
-  materials_source: "—"
-  materials_optimized: "—"
+  materials_source: "13"
+  materials_optimized: "3"
 
-  textures_source: "—"
-  textures_optimized: "—"
+  textures_source: "3"
+  textures_optimized: "3"
 
 
 - id: "model-05"
@@ -85,14 +85,14 @@
   source_file: "model-05-source.glb"
   optimized_file: "model-05-optimized.glb"
 
-  source_size_mb: 110
-  optimized_size_mb: 16
+  source_size_mb: 44.7
+  optimized_size_mb: 3
 
-  polygons_source: "—"
-  polygons_optimized: "—"
+  polygons_source: "1 169 964"
+  polygons_optimized: "639 886"
 
-  materials_source: "—"
-  materials_optimized: "—"
+  materials_source: "4"
+  materials_optimized: "3"
 
-  textures_source: "—"
-  textures_optimized: "—"
+  textures_source: "3"
+  textures_optimized: "3"
